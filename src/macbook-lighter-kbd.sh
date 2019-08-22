@@ -1,8 +1,8 @@
 set -e
 
-device='/sys/class/leds/smc::spi_backlight/brightness'
+device='/sys/class/leds/spi::kbd_backlight/brightness'
 current=`cat $device`
-max=`cat /sys/class/leds/smc::spi_backlight/max_brightness`
+max=`cat /sys/class/leds/spi::kbd_backlight/max_brightness`
 
 kbd_help () {
     echo 'Usage: macbook-lighter-kbd <OPTION> [NUM]'
